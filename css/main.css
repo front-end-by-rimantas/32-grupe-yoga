@@ -1,11 +1,21 @@
+:root {
+    --orandzine: #ff4622;
+    --plotis: 1000px;
+    --soninis-atstumas: calc((100% - var(--plotis)) / 2);
+    --main-width: calc(var(--plotis) + var(--soninis-atstumas));
+    --text-width: calc(var(--plotis) * 0.4);
+    --text-margin: calc(var(--plotis) * 0.1);
+    --image-width: calc(100% - var(--plotis) / 2);
+}
+
 body {
     font-family: cursive;
 }
 
 header {
     display: inline-block;
-    width: 1000px;
-    margin-left: calc(50% - 500px);
+    width: var(--plotis);
+    margin-left: var(--soninis-atstumas);
 }
 
 header > img {
@@ -28,27 +38,38 @@ nav > a {
 }
 
 nav > a:hover {
-    border-color: #ff4622;
+    border-color: var(--orandzine);
 }
 
 nav > a:first-child {
     margin-left: 0;
-    border-color: #ff4622;
+    border-color: var(--orandzine);
 }
 
 main {
+    display: inline-block;
+    width: var(--main-width);
+    margin-left: var(--soninis-atstumas);
 }
 
 div {
+    float: left;
+    width: var(--text-width);
+    margin-right: var(--text-margin);
 }
 
 h1 {
+    display: inline-block;
+    width: 100%;
 }
 
 h1 > span {
+    color: var(--orandzine);
 }
 
 p {
+    display: inline-block;
+    width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -56,4 +77,6 @@ div > a {
 }
 
 main > img {
+    float: left;
+    width: var(--image-width);
 }
