@@ -1,22 +1,39 @@
 body {
+    font-family: cursive;
 }
 
 header {
+    display: inline-block;
+    width: 1000px;
+    margin-left: calc(50% - 500px);
 }
 
 header > img {
+    float: left;
+    height: 40px;
 }
 
 nav {
+    float: right;
+    margin-top: 20px;
 }
 
 nav > a {
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2c253e;
+    margin-left: 20px;
+    border-bottom: 3px solid transparent;
 }
 
 nav > a:hover {
+    border-color: #ff4622;
 }
 
 nav > a:first-child {
+    margin-left: 0;
+    border-color: #ff4622;
 }
 
 main {
@@ -32,6 +49,7 @@ h1 > span {
 }
 
 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div > a {
